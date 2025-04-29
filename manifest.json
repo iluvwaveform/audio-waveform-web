@@ -1,0 +1,10 @@
+
+{
+  "name": "Audio Waveform Web",
+  "short_name": "WaveformWeb",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "App Flutter per waveform audio su Web"
+}

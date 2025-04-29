@@ -3,10 +3,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Waveform Web</title>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Waveform Web App Flutter">
+  <title>Audio Waveform Web</title>
+  <link rel="manifest" href="manifest.json">
+  <script defer src="flutter.js"></script>
   <script defer src="main.dart.js"></script>
 </head>
 <body>
-  <p>Se vedi questa pagina, l'app Flutter Web è caricata. Devi avviare il file main.dart.js generato da Flutter!</p>
+  <script>
+    window.addEventListener('load', function(ev) {
+      _flutter.loader.loadEntrypoint({
+        entrypointUrl: 'main.dart.js',
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
 </body>
 </html>

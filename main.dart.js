@@ -1,0 +1,1 @@
+// Compiled Flutter App placeholder (main.dart.js)
